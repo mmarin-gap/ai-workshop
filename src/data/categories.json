@@ -1,0 +1,56 @@
+[
+  {
+    "id": "1",
+    "name": "Computers",
+    "slug": "computers",
+    "icon": "/icons/computer.svg"
+  },
+  {
+    "id": "2",
+    "name": "Tablets",
+    "slug": "tablets",
+    "icon": "/icons/tablet.svg"
+  },
+  {
+    "id": "3",
+    "name": "Cell Phones",
+    "slug": "cell-phones",
+    "icon": "/icons/phone.svg"
+  },
+  {
+    "id": "4",
+    "name": "Smart Watches",
+    "slug": "smart-watches",
+    "icon": "/icons/watch.svg"
+  },
+  {
+    "id": "5",
+    "name": "Mobile Accessories",
+    "slug": "mobile-accessories",
+    "icon": "/icons/accessories.svg"
+  },
+  {
+    "id": "6",
+    "name": "Headphones",
+    "slug": "headphones",
+    "icon": "/icons/headphones.svg"
+  },
+  {
+    "id": "7",
+    "name": "Speakers",
+    "slug": "speakers",
+    "icon": "/icons/speaker.svg"
+  },
+  {
+    "id": "8",
+    "name": "TV & Video",
+    "slug": "tv-video",
+    "icon": "/icons/tv.svg"
+  },
+  {
+    "id": "9",
+    "name": "Video Games and Consoles",
+    "slug": "video-games-consoles",
+    "icon": "/icons/game.svg"
+  }
+]

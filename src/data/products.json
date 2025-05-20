@@ -1,0 +1,991 @@
+[
+  {
+    "id": "1",
+    "name": "MacBook Pro 16-inch",
+    "category_id": "1",
+    "price": 2399.99,
+    "sale_price": 2199.99,
+    "stock": 15,
+    "thumbnail": "https://picsum.photos/id/3/300/200",
+    "images": [
+      "https://picsum.photos/id/3/800/600",
+      "https://picsum.photos/id/4/800/600",
+      "https://picsum.photos/id/5/800/600"
+    ],
+    "description": "Powerful laptop with M2 Pro chip for professionals",
+    "full_description": "The MacBook Pro 16-inch delivers game-changing performance for pros. With the M2 Pro chip — and the option for M2 Max — you get incredible capability from the ultimate laptop, with up to 96GB of unified memory, exceptional CPU and GPU performance, support for two external displays, and more.",
+    "specifications": {
+      "processor": "Apple M2 Pro/M2 Max",
+      "memory": "16GB-96GB",
+      "storage": "512GB-8TB SSD",
+      "display": "16-inch Liquid Retina XDR display",
+      "battery": "Up to 22 hours"
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 1242
+    },
+    "related_products": ["2", "5", "8"]
+  },
+  {
+    "id": "2",
+    "name": "Dell XPS 15",
+    "category_id": "1",
+    "price": 1899.99,
+    "stock": 23,
+    "thumbnail": "https://picsum.photos/id/6/300/200",
+    "images": [
+      "https://picsum.photos/id/6/800/600",
+      "https://picsum.photos/id/7/800/600",
+      "https://picsum.photos/id/8/800/600"
+    ],
+    "description": "Premium ultrabook with stunning InfinityEdge display",
+    "full_description": "The Dell XPS 15 combines exceptional performance with a gorgeous, borderless InfinityEdge display. Powered by the latest Intel processors and NVIDIA graphics, this laptop delivers the perfect balance of power and portability for creative professionals and demanding users.",
+    "specifications": {
+      "processor": "Intel Core i7/i9",
+      "memory": "16GB-64GB",
+      "storage": "512GB-2TB SSD",
+      "display": "15.6-inch 4K UHD+ touchscreen",
+      "battery": "Up to 13 hours"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 856
+    },
+    "related_products": ["1", "3", "9"]
+  },
+  {
+    "id": "3",
+    "name": "HP Spectre x360",
+    "category_id": "1",
+    "price": 1499.99,
+    "sale_price": 1299.99,
+    "stock": 10,
+    "thumbnail": "https://picsum.photos/id/9/300/200",
+    "images": [
+      "https://picsum.photos/id/9/800/600",
+      "https://picsum.photos/id/10/800/600",
+      "https://picsum.photos/id/11/800/600"
+    ],
+    "description": "Versatile 2-in-1 laptop with premium design",
+    "full_description": "The HP Spectre x360 redefines versatility with its sophisticated design and 360-degree hinge. This premium convertible laptop offers top-tier performance in a stunning gem-cut chassis, perfect for both productivity and creative tasks.",
+    "specifications": {
+      "processor": "Intel Core i7",
+      "memory": "16GB",
+      "storage": "1TB SSD",
+      "display": "13.5-inch 3K2K OLED touchscreen",
+      "battery": "Up to 16 hours"
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 632
+    },
+    "related_products": ["1", "2", "4"]
+  },
+  {
+    "id": "4",
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "category_id": "1",
+    "price": 1699.99,
+    "stock": 7,
+    "thumbnail": "https://picsum.photos/id/12/300/200",
+    "images": [
+      "https://picsum.photos/id/12/800/600",
+      "https://picsum.photos/id/13/800/600",
+      "https://picsum.photos/id/14/800/600"
+    ],
+    "description": "Business laptop with legendary durability and performance",
+    "full_description": "The ThinkPad X1 Carbon continues Lenovo's legacy of business excellence. Military-grade durability meets premium performance in an ultralight carbon fiber chassis, making it the ultimate productivity tool for professionals on the go.",
+    "specifications": {
+      "processor": "Intel Core i7 vPro",
+      "memory": "16GB LPDDR5",
+      "storage": "1TB PCIe SSD",
+      "display": "14-inch WUXGA IPS anti-glare",
+      "battery": "Up to 19.5 hours"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 789
+    },
+    "related_products": ["2", "3", "6"]
+  },
+  {
+    "id": "5",
+    "name": "iPad Pro 12.9",
+    "category_id": "2",
+    "price": 1099.99,
+    "stock": 25,
+    "thumbnail": "https://picsum.photos/id/15/300/200",
+    "images": [
+      "https://picsum.photos/id/15/800/600",
+      "https://picsum.photos/id/16/800/600",
+      "https://picsum.photos/id/17/800/600"
+    ],
+    "description": "Powerful tablet with M2 chip and stunning XDR display",
+    "full_description": "The iPad Pro 12.9 redefines what iPad can do. Powered by the Apple M2 chip and featuring a stunning Liquid Retina XDR display, it delivers performance that surpasses many laptops in a versatile tablet form factor.",
+    "specifications": {
+      "processor": "Apple M2",
+      "memory": "8GB-16GB",
+      "storage": "128GB-2TB",
+      "display": "12.9-inch Liquid Retina XDR",
+      "battery": "Up to 10 hours"
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 1543
+    },
+    "related_products": ["6", "7", "10"]
+  },
+  {
+    "id": "6",
+    "name": "Samsung Galaxy Tab S9 Ultra",
+    "category_id": "2",
+    "price": 1199.99,
+    "sale_price": 999.99,
+    "stock": 18,
+    "thumbnail": "https://picsum.photos/id/18/300/200",
+    "images": [
+      "https://picsum.photos/id/18/800/600",
+      "https://picsum.photos/id/19/800/600",
+      "https://picsum.photos/id/20/800/600"
+    ],
+    "description": "Premium Android tablet with massive AMOLED display",
+    "full_description": "The Samsung Galaxy Tab S9 Ultra is the ultimate Android tablet experience. With its massive 14.6-inch Dynamic AMOLED 2X display and powerful Snapdragon processor, it's perfect for productivity, creativity, and entertainment.",
+    "specifications": {
+      "processor": "Snapdragon 8 Gen 2",
+      "memory": "12GB-16GB",
+      "storage": "256GB-1TB",
+      "display": "14.6-inch Dynamic AMOLED 2X",
+      "battery": "11,200mAh"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 876
+    },
+    "related_products": ["5", "7", "11"]
+  },
+  {
+    "id": "7",
+    "name": "Microsoft Surface Pro 9",
+    "category_id": "2",
+    "price": 999.99,
+    "stock": 14,
+    "thumbnail": "https://picsum.photos/id/21/300/200",
+    "images": [
+      "https://picsum.photos/id/21/800/600",
+      "https://picsum.photos/id/22/800/600",
+      "https://picsum.photos/id/23/800/600"
+    ],
+    "description": "Versatile 2-in-1 Windows tablet for productivity",
+    "full_description": "The Surface Pro 9 combines the power of a laptop with the flexibility of a tablet. Running full Windows 11, it offers true desktop-class performance with the convenience of a touchscreen and optional keyboard attachment.",
+    "specifications": {
+      "processor": "Intel Core i5/i7",
+      "memory": "8GB-32GB",
+      "storage": "128GB-1TB SSD",
+      "display": "13-inch PixelSense Flow",
+      "battery": "Up to 15.5 hours"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 734
+    },
+    "related_products": ["5", "6", "12"]
+  },
+  {
+    "id": "8",
+    "name": "Lenovo Tab P12 Pro",
+    "category_id": "2",
+    "price": 699.99,
+    "sale_price": 649.99,
+    "stock": 9,
+    "thumbnail": "https://picsum.photos/id/24/300/200",
+    "images": [
+      "https://picsum.photos/id/24/800/600",
+      "https://picsum.photos/id/25/800/600",
+      "https://picsum.photos/id/26/800/600"
+    ],
+    "description": "Premium Android tablet with stunning AMOLED display",
+    "full_description": "The Lenovo Tab P12 Pro offers a premium Android tablet experience with its large 12.6-inch AMOLED display, powerful Snapdragon processor, and JBL speakers for immersive entertainment and productive multitasking.",
+    "specifications": {
+      "processor": "Snapdragon 870",
+      "memory": "6GB-8GB",
+      "storage": "128GB-256GB",
+      "display": "12.6-inch 2K AMOLED",
+      "battery": "10,200mAh"
+    },
+    "rating": {
+      "average": 4.4,
+      "count": 489
+    },
+    "related_products": ["6", "7", "13"]
+  },
+  {
+    "id": "9",
+    "name": "iPhone 15 Pro Max",
+    "category_id": "3",
+    "price": 1199.99,
+    "stock": 32,
+    "thumbnail": "https://picsum.photos/id/27/300/200",
+    "images": [
+      "https://picsum.photos/id/27/800/600",
+      "https://picsum.photos/id/28/800/600",
+      "https://picsum.photos/id/29/800/600"
+    ],
+    "description": "Premium smartphone with advanced camera system",
+    "full_description": "The iPhone 15 Pro Max represents the pinnacle of iPhone design and capability. Featuring Apple's latest A17 Pro chip, a professional camera system, and a stunning Super Retina XDR display with ProMotion technology.",
+    "specifications": {
+      "processor": "A17 Pro chip",
+      "memory": "8GB",
+      "storage": "256GB-1TB",
+      "display": "6.7-inch Super Retina XDR",
+      "battery": "Up to 29 hours video playback"
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 2345
+    },
+    "related_products": ["10", "13", "17"]
+  },
+  {
+    "id": "10",
+    "name": "Samsung Galaxy S24 Ultra",
+    "category_id": "3",
+    "price": 1299.99,
+    "sale_price": 1199.99,
+    "stock": 27,
+    "thumbnail": "https://picsum.photos/id/30/300/200",
+    "images": [
+      "https://picsum.photos/id/30/800/600",
+      "https://picsum.photos/id/31/800/600",
+      "https://picsum.photos/id/32/800/600"
+    ],
+    "description": "Flagship Android phone with S Pen and 200MP camera",
+    "full_description": "The Samsung Galaxy S24 Ultra pushes the boundaries of smartphone technology with its 200MP camera system, built-in S Pen, and powerful AI features. The Snapdragon 8 Gen 3 processor and massive battery ensure performance that lasts all day.",
+    "specifications": {
+      "processor": "Snapdragon 8 Gen 3",
+      "memory": "12GB-16GB",
+      "storage": "256GB-1TB",
+      "display": "6.8-inch Dynamic AMOLED 2X",
+      "battery": "5,000mAh"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 1876
+    },
+    "related_products": ["9", "11", "18"]
+  },
+  {
+    "id": "11",
+    "name": "Google Pixel 8 Pro",
+    "category_id": "3",
+    "price": 999.99,
+    "stock": 19,
+    "thumbnail": "https://picsum.photos/id/33/300/200",
+    "images": [
+      "https://picsum.photos/id/33/800/600",
+      "https://picsum.photos/id/34/800/600",
+      "https://picsum.photos/id/35/800/600"
+    ],
+    "description": "Google's flagship phone with advanced AI features",
+    "full_description": "The Google Pixel 8 Pro showcases the best of Google's AI capabilities with its Tensor G3 chip. Featuring a versatile camera system that captures stunning photos in any lighting condition and a pure Android experience with 7 years of updates.",
+    "specifications": {
+      "processor": "Google Tensor G3",
+      "memory": "12GB",
+      "storage": "128GB-512GB",
+      "display": "6.7-inch LTPO OLED",
+      "battery": "5,050mAh"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 1245
+    },
+    "related_products": ["9", "10", "19"]
+  },
+  {
+    "id": "12",
+    "name": "OnePlus 12",
+    "category_id": "3",
+    "price": 899.99,
+    "sale_price": 849.99,
+    "stock": 13,
+    "thumbnail": "https://picsum.photos/id/36/300/200",
+    "images": [
+      "https://picsum.photos/id/36/800/600",
+      "https://picsum.photos/id/37/800/600",
+      "https://picsum.photos/id/38/800/600"
+    ],
+    "description": "Flagship killer with powerful specs and fast charging",
+    "full_description": "The OnePlus 12 continues the brand's tradition of offering flagship specs at a competitive price. With its Snapdragon 8 Gen 3 processor, Hasselblad camera system, and 100W SUPERVOOC charging, it delivers premium performance in every aspect.",
+    "specifications": {
+      "processor": "Snapdragon 8 Gen 3",
+      "memory": "12GB-16GB",
+      "storage": "256GB-512GB",
+      "display": "6.82-inch LTPO AMOLED",
+      "battery": "5,400mAh"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 987
+    },
+    "related_products": ["10", "11", "20"]
+  },
+  {
+    "id": "13",
+    "name": "Apple Watch Ultra 2",
+    "category_id": "4",
+    "price": 799.99,
+    "stock": 21,
+    "thumbnail": "https://picsum.photos/id/39/300/200",
+    "images": [
+      "https://picsum.photos/id/39/800/600",
+      "https://picsum.photos/id/40/800/600",
+      "https://picsum.photos/id/41/800/600"
+    ],
+    "description": "Premium smartwatch for extreme adventures",
+    "full_description": "The Apple Watch Ultra 2 is designed for explorers and athletes who push the limits. With its rugged titanium case, precision dual-frequency GPS, customizable Action button, and enhanced sports tracking, it's built to withstand the most extreme conditions.",
+    "specifications": {
+      "processor": "Apple S9 SiP",
+      "memory": "64GB",
+      "display": "49mm Always-On Retina LTPO OLED",
+      "water resistance": "100 meters",
+      "battery": "Up to 36 hours"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 1123
+    },
+    "related_products": ["14", "17", "21"]
+  },
+  {
+    "id": "14",
+    "name": "Samsung Galaxy Watch 6 Classic",
+    "category_id": "4",
+    "price": 399.99,
+    "sale_price": 349.99,
+    "stock": 24,
+    "thumbnail": "https://picsum.photos/id/42/300/200",
+    "images": [
+      "https://picsum.photos/id/42/800/600",
+      "https://picsum.photos/id/43/800/600",
+      "https://picsum.photos/id/44/800/600"
+    ],
+    "description": "Elegant smartwatch with rotating bezel and health tracking",
+    "full_description": "The Samsung Galaxy Watch 6 Classic combines timeless design with cutting-edge technology. The physical rotating bezel offers intuitive navigation while advanced health sensors track everything from body composition to sleep quality.",
+    "specifications": {
+      "processor": "Exynos W930",
+      "memory": "2GB RAM, 16GB storage",
+      "display": "1.5-inch Super AMOLED",
+      "water resistance": "5 ATM + IP68",
+      "battery": "Up to 40 hours"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 876
+    },
+    "related_products": ["13", "15", "22"]
+  },
+  {
+    "id": "15",
+    "name": "Garmin Fenix 7X Sapphire Solar",
+    "category_id": "4",
+    "price": 899.99,
+    "stock": 11,
+    "thumbnail": "https://picsum.photos/id/45/300/200",
+    "images": [
+      "https://picsum.photos/id/45/800/600",
+      "https://picsum.photos/id/46/800/600",
+      "https://picsum.photos/id/47/800/600"
+    ],
+    "description": "Advanced multisport GPS watch with solar charging",
+    "full_description": "The Garmin Fenix 7X Sapphire Solar is the ultimate outdoor adventure watch. With built-in solar charging, multi-band GPS, topographic maps, and advanced training metrics, it's designed for athletes and explorers who demand the best.",
+    "specifications": {
+      "display": "1.4-inch transflective MIP",
+      "water resistance": "10 ATM",
+      "sensors": "GPS, GLONASS, Galileo, heart rate, pulse ox",
+      "battery": "Up to 37 days in smartwatch mode with solar",
+      "materials": "Sapphire crystal, titanium bezel"
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 756
+    },
+    "related_products": ["13", "14", "23"]
+  },
+  {
+    "id": "16",
+    "name": "Fitbit Sense 2",
+    "category_id": "4",
+    "price": 299.99,
+    "sale_price": 249.99,
+    "stock": 17,
+    "thumbnail": "https://picsum.photos/id/48/300/200",
+    "images": [
+      "https://picsum.photos/id/48/800/600",
+      "https://picsum.photos/id/49/800/600",
+      "https://picsum.photos/id/50/800/600"
+    ],
+    "description": "Advanced health smartwatch with stress management",
+    "full_description": "The Fitbit Sense 2 is your daily health companion. With continuous electrodermal activity (cEDA) monitoring, ECG app, and advanced sleep tracking, it helps you understand and manage your stress, heart health, and overall wellbeing.",
+    "specifications": {
+      "display": "1.58-inch AMOLED",
+      "sensors": "Heart rate, EDA, ECG, temperature",
+      "water resistance": "50 meters",
+      "battery": "Up to 6+ days",
+      "compatibility": "iOS and Android"
+    },
+    "rating": {
+      "average": 4.4,
+      "count": 582
+    },
+    "related_products": ["14", "15", "24"]
+  },
+  {
+    "id": "17",
+    "name": "MagSafe Battery Pack",
+    "category_id": "5",
+    "price": 99.99,
+    "stock": 42,
+    "thumbnail": "https://picsum.photos/id/51/300/200",
+    "images": [
+      "https://picsum.photos/id/51/800/600",
+      "https://picsum.photos/id/52/800/600",
+      "https://picsum.photos/id/53/800/600"
+    ],
+    "description": "Wireless portable battery for iPhone with MagSafe",
+    "full_description": "The MagSafe Battery Pack magnetically attaches to your iPhone, providing safe and reliable wireless charging on the go. Perfectly integrated with iOS, it displays charging status right on your lock screen.",
+    "specifications": {
+      "capacity": "1460mAh (7.62V)",
+      "output": "Up to 15W with power adapter",
+      "compatibility": "iPhone 12 and later with MagSafe",
+      "charging": "Lightning port",
+      "size": "Compact and pocket-friendly"
+    },
+    "rating": {
+      "average": 4.2,
+      "count": 1345
+    },
+    "related_products": ["18", "21", "29"]
+  },
+  {
+    "id": "18",
+    "name": "Samsung 45W Super Fast Charger",
+    "category_id": "5",
+    "price": 49.99,
+    "sale_price": 39.99,
+    "stock": 38,
+    "thumbnail": "https://picsum.photos/id/54/300/200",
+    "images": [
+      "https://picsum.photos/id/54/800/600",
+      "https://picsum.photos/id/55/800/600",
+      "https://picsum.photos/id/56/800/600"
+    ],
+    "description": "High-speed wall charger for Samsung devices",
+    "full_description": "The Samsung 45W Super Fast Charger delivers incredible charging speeds for compatible Galaxy devices. With USB-C Power Delivery, it can also fast charge other devices, making it the perfect all-in-one charging solution.",
+    "specifications": {
+      "output": "45W maximum",
+      "protocol": "USB-C Power Delivery 3.0, PPS",
+      "compatibility": "Samsung Galaxy and other USB-C devices",
+      "cable": "USB-C to USB-C cable included",
+      "safety": "Multiple safety features"
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 873
+    },
+    "related_products": ["17", "19", "30"]
+  },
+  {
+    "id": "19",
+    "name": "Anker PowerCore 26800 Portable Charger",
+    "category_id": "5",
+    "price": 69.99,
+    "stock": 23,
+    "thumbnail": "https://picsum.photos/id/57/300/200",
+    "images": [
+      "https://picsum.photos/id/57/800/600",
+      "https://picsum.photos/id/58/800/600",
+      "https://picsum.photos/id/59/800/600"
+    ],
+    "description": "High-capacity power bank for multiple device charges",
+    "full_description": "The Anker PowerCore 26800 packs enough power to charge most smartphones over 6 times. With three USB output ports and dual input ports for faster recharging, it's the perfect companion for travel, emergencies, or everyday use.",
+    "specifications": {
+      "capacity": "26800mAh",
+      "output": "3 USB-A ports, up to 5V/6A total",
+      "input": "Dual Micro USB, 5V/2A each",
+      "recharge time": "6 hours with dual input",
+      "weight": "495g"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 2135
+    },
+    "related_products": ["17", "18", "31"]
+  },
+  {
+    "id": "20",
+    "name": "OtterBox Defender Series Case",
+    "category_id": "5",
+    "price": 59.99,
+    "sale_price": 49.99,
+    "stock": 32,
+    "thumbnail": "https://picsum.photos/id/60/300/200",
+    "images": [
+      "https://picsum.photos/id/60/800/600",
+      "https://picsum.photos/id/61/800/600",
+      "https://picsum.photos/id/62/800/600"
+    ],
+    "description": "Rugged protection case for smartphones",
+    "full_description": "The OtterBox Defender Series provides legendary protection for your smartphone. With a multi-layer defense system including a solid inner shell, outer slipcover, and built-in screen protector, it guards against drops, bumps, and scratches.",
+    "specifications": {
+      "protection": "Drop+ protection",
+      "materials": "Polycarbonate shell, synthetic rubber slipcover",
+      "features": "Built-in screen protector, port covers",
+      "compatibility": "Available for various smartphone models",
+      "extras": "Includes belt clip holster"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 987
+    },
+    "related_products": ["19", "32", "33"]
+  },
+  {
+    "id": "21",
+    "name": "Sony WH-1000XM5",
+    "category_id": "6",
+    "price": 399.99,
+    "stock": 15,
+    "thumbnail": "https://picsum.photos/id/63/300/200",
+    "images": [
+      "https://picsum.photos/id/63/800/600",
+      "https://picsum.photos/id/64/800/600",
+      "https://picsum.photos/id/65/800/600"
+    ],
+    "description": "Premium wireless noise-cancelling headphones",
+    "full_description": "The Sony WH-1000XM5 sets a new standard for noise cancellation with eight microphones and two processors. Featuring exceptional sound quality, a lightweight design, and up to 30 hours of battery life, they deliver an unmatched listening experience.",
+    "specifications": {
+      "driver": "30mm carbon fiber drivers",
+      "noise cancellation": "Industry-leading ANC",
+      "battery": "Up to 30 hours with ANC",
+      "connectivity": "Bluetooth 5.2, 3.5mm wired option",
+      "features": "Touch controls, speak-to-chat, DSEE Extreme upscaling"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 1532
+    },
+    "related_products": ["22", "25", "29"]
+  },
+  {
+    "id": "22",
+    "name": "Apple AirPods Pro 2",
+    "category_id": "6",
+    "price": 249.99,
+    "sale_price": 219.99,
+    "stock": 27,
+    "thumbnail": "https://picsum.photos/id/66/300/200",
+    "images": [
+      "https://picsum.photos/id/66/800/600",
+      "https://picsum.photos/id/67/800/600",
+      "https://picsum.photos/id/68/800/600"
+    ],
+    "description": "Premium wireless earbuds with active noise cancellation",
+    "full_description": "The AirPods Pro 2 offer a magical audio experience with personalized spatial audio, advanced active noise cancellation, and a transparency mode that lets you hear the world around you. The MagSafe charging case with built-in speaker and lanyard loop adds even more convenience.",
+    "specifications": {
+      "chip": "H2 chip",
+      "battery": "Up to 6 hours listening time, 30 hours with case",
+      "water resistance": "IPX4 sweat and water resistant",
+      "features": "Active Noise Cancellation, Adaptive Transparency, Spatial Audio",
+      "ear tips": "Four sizes included (XS, S, M, L)"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 2143
+    },
+    "related_products": ["21", "23", "30"]
+  },
+  {
+    "id": "23",
+    "name": "Bose QuietComfort Ultra Headphones",
+    "category_id": "6",
+    "price": 429.99,
+    "stock": 19,
+    "thumbnail": "https://picsum.photos/id/69/300/200",
+    "images": [
+      "https://picsum.photos/id/69/800/600",
+      "https://picsum.photos/id/70/800/600",
+      "https://picsum.photos/id/71/800/600"
+    ],
+    "description": "Premium headphones with spatial audio and world-class noise cancellation",
+    "full_description": "The Bose QuietComfort Ultra Headphones deliver the ultimate listening experience with Bose Immersive Audio that transforms stereo content into a spatial, multidimensional experience. World-class noise cancellation and CustomTune technology tailor the audio performance to you.",
+    "specifications": {
+      "audio": "Bose Immersive Audio, CustomTune technology",
+      "noise cancellation": "World-class with Aware Mode",
+      "battery": "Up to 24 hours",
+      "connectivity": "Bluetooth 5.3, multipoint connection",
+      "features": "Touch controls, smart control app"
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 876
+    },
+    "related_products": ["21", "22", "24"]
+  },
+  {
+    "id": "24",
+    "name": "Sennheiser Momentum 4 Wireless",
+    "category_id": "6",
+    "price": 349.99,
+    "sale_price": 299.99,
+    "stock": 14,
+    "thumbnail": "https://picsum.photos/id/72/300/200",
+    "images": [
+      "https://picsum.photos/id/72/800/600",
+      "https://picsum.photos/id/73/800/600",
+      "https://picsum.photos/id/74/800/600"
+    ],
+    "description": "Premium headphones with exceptional sound and battery life",
+    "full_description": "The Sennheiser Momentum 4 Wireless headphones combine audiophile-grade sound with incredible 60-hour battery life. Advanced adaptive noise cancellation, intuitive touch controls, and premium comfort make these perfect for extended listening sessions.",
+    "specifications": {
+      "driver": "42mm dynamic drivers",
+      "battery": "Up to 60 hours with ANC",
+      "connectivity": "Bluetooth 5.2, 3.5mm wired option",
+      "features": "Adaptive noise cancellation, transparency mode, multipoint connection",
+      "controls": "Touch panel, voice assistant support"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 743
+    },
+    "related_products": ["21", "23", "32"]
+  },
+  {
+    "id": "25",
+    "name": "Sonos Era 300",
+    "category_id": "7",
+    "price": 449.99,
+    "stock": 23,
+    "thumbnail": "https://picsum.photos/id/75/300/200",
+    "images": [
+      "https://picsum.photos/id/75/800/600",
+      "https://picsum.photos/id/76/800/600",
+      "https://picsum.photos/id/77/800/600"
+    ],
+    "description": "Premium smart speaker with spatial audio and room-filling sound",
+    "full_description": "The Sonos Era 300 delivers an unmatched spatial audio experience with its unique hourglass design and six precisely angled drivers. It adapts to your room's acoustics and connects seamlessly with your existing Sonos system for whole-home audio.",
+    "specifications": {
+      "audio": "Spatial audio with Dolby Atmos support",
+      "connectivity": "Wi-Fi 6, Bluetooth 5.0, AirPlay 2",
+      "voice control": "Amazon Alexa built-in",
+      "features": "Trueplay tuning, stereo pairing, Sonos app control",
+      "dimensions": "6.3 x 10.24 x 7.28 inches"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 534
+    },
+    "related_products": ["26", "29", "33"]
+  },
+  {
+    "id": "26",
+    "name": "Bose Smart Soundbar 900",
+    "category_id": "7",
+    "price": 899.99,
+    "sale_price": 799.99,
+    "stock": 11,
+    "thumbnail": "https://picsum.photos/id/78/300/200",
+    "images": [
+      "https://picsum.photos/id/78/800/600",
+      "https://picsum.photos/id/79/800/600",
+      "https://picsum.photos/id/80/800/600"
+    ],
+    "description": "Premium Dolby Atmos soundbar with spatial audio",
+    "full_description": "The Bose Smart Soundbar 900 transforms your TV experience with Dolby Atmos and Bose's proprietary TrueSpace technology that analyzes and upmixes content for an immersive experience. Voice assistants, AirPlay 2, and Bluetooth give you multiple ways to enjoy your audio.",
+    "specifications": {
+      "audio": "Dolby Atmos, Bose TrueSpace technology",
+      "connectivity": "HDMI eARC, optical, Wi-Fi, Bluetooth, AirPlay 2",
+      "voice control": "Google Assistant and Amazon Alexa built-in",
+      "dimensions": "41.14 x 2.29 x 4.21 inches",
+      "expandability": "Compatible with Bose bass modules and surround speakers"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 765
+    },
+    "related_products": ["25", "27", "34"]
+  },
+  {
+    "id": "27",
+    "name": "JBL Charge 5",
+    "category_id": "7",
+    "price": 179.99,
+    "stock": 35,
+    "thumbnail": "https://picsum.photos/id/81/300/200",
+    "images": [
+      "https://picsum.photos/id/81/800/600",
+      "https://picsum.photos/id/82/800/600",
+      "https://picsum.photos/id/83/800/600"
+    ],
+    "description": "Portable Bluetooth speaker with powerful sound and power bank function",
+    "full_description": "The JBL Charge 5 delivers bold JBL Original Pro Sound with its optimized long excursion driver, separate tweeter, and dual passive radiators. IP67 waterproof and dustproof design makes it perfect for any adventure, while the built-in power bank keeps your devices charged.",
+    "specifications": {
+      "drivers": "Racetrack-shaped woofer, separate tweeter",
+      "battery": "Up to 20 hours of playtime",
+      "waterproof": "IP67 waterproof and dustproof",
+      "features": "JBL PartyBoost for multiple speaker pairing, power bank functionality",
+      "connectivity": "Bluetooth 5.1"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 1254
+    },
+    "related_products": ["25", "26", "28"]
+  },
+  {
+    "id": "28",
+    "name": "Ultimate Ears MEGABOOM 3",
+    "category_id": "7",
+    "price": 199.99,
+    "sale_price": 169.99,
+    "stock": 22,
+    "thumbnail": "https://picsum.photos/id/84/300/200",
+    "images": [
+      "https://picsum.photos/id/84/800/600",
+      "https://picsum.photos/id/85/800/600",
+      "https://picsum.photos/id/86/800/600"
+    ],
+    "description": "Portable 360-degree Bluetooth speaker with deep bass",
+    "full_description": "The Ultimate Ears MEGABOOM 3 delivers intense, immersive 360-degree sound with deep, heart-pounding bass. The virtually indestructible design is waterproof, dustproof, and floats in water. With 20-hour battery life and one-touch music control, it's the ultimate portable party speaker.",
+    "specifications": {
+      "sound": "360-degree sound with deep bass",
+      "battery": "Up to 20 hours of playtime",
+      "waterproof": "IP67 waterproof and dustproof, floats in water",
+      "features": "Magic Button for one-touch music control, PartyUp with 150+ speakers",
+      "connectivity": "Bluetooth, Ultimate Ears app"
+    },
+    "rating": {
+      "average": 4.5,
+      "count": 876
+    },
+    "related_products": ["26", "27", "35"]
+  },
+  {
+    "id": "29",
+    "name": "LG C2 65-inch OLED TV",
+    "category_id": "8",
+    "price": 1999.99,
+    "sale_price": 1799.99,
+    "stock": 8,
+    "thumbnail": "https://picsum.photos/id/87/300/200",
+    "images": [
+      "https://picsum.photos/id/87/800/600",
+      "https://picsum.photos/id/88/800/600",
+      "https://picsum.photos/id/89/800/600"
+    ],
+    "description": "Premium OLED TV with stunning picture quality",
+    "full_description": "The LG C2 65-inch OLED TV delivers breathtaking picture quality with infinite contrast, perfect black, and over a billion colors. Powered by the α9 Gen5 AI Processor 4K, it adapts to what you're watching for stunning picture and sound. Perfect for movies, sports, and gaming with NVIDIA G-SYNC, FreeSync Premium, and VRR support.",
+    "specifications": {
+      "display": "65-inch 4K OLED evo",
+      "processor": "α9 Gen5 AI Processor 4K",
+      "HDR": "Dolby Vision, HDR10, HLG",
+      "gaming": "4 HDMI 2.1 ports, G-SYNC, FreeSync Premium, VRR, ALLM",
+      "audio": "Dolby Atmos, AI Sound Pro"
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 1732
+    },
+    "related_products": ["26", "30", "37"]
+  },
+  {
+    "id": "30",
+    "name": "Samsung QN90B Neo QLED 4K TV",
+    "category_id": "8",
+    "price": 2199.99,
+    "stock": 12,
+    "thumbnail": "https://picsum.photos/id/90/300/200",
+    "images": [
+      "https://picsum.photos/id/90/800/600",
+      "https://picsum.photos/id/91/800/600",
+      "https://picsum.photos/id/92/800/600"
+    ],
+    "description": "Premium 4K Neo QLED TV with mini-LED technology",
+    "full_description": "The Samsung QN90B Neo QLED TV combines Mini LED technology with Quantum Matrix Technology Pro for exceptional brightness, contrast, and color. The Neural Quantum Processor 4K optimizes every scene, while anti-reflection technology and wide viewing angles ensure everyone gets the best seat in the house.",
+    "specifications": {
+      "display": "65-inch 4K Neo QLED with Mini LED",
+      "processor": "Neural Quantum Processor 4K",
+      "HDR": "Quantum HDR 32X, HDR10+",
+      "gaming": "Motion Xcelerator Turbo+, FreeSync Premium Pro, 4 HDMI ports",
+      "audio": "Object Tracking Sound+, Q-Symphony"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 1243
+    },
+    "related_products": ["29", "31", "38"]
+  },
+  {
+    "id": "31",
+    "name": "Sony X95L 4K Mini LED TV",
+    "category_id": "8",
+    "price": 2299.99,
+    "sale_price": 2099.99,
+    "stock": 9,
+    "thumbnail": "https://picsum.photos/id/93/300/200",
+    "images": [
+      "https://picsum.photos/id/93/800/600",
+      "https://picsum.photos/id/94/800/600",
+      "https://picsum.photos/id/95/800/600"
+    ],
+    "description": "Premium 4K Mini LED TV with Cognitive Processor XR",
+    "full_description": "The Sony X95L combines Mini LED technology with Sony's Cognitive Processor XR to deliver exceptional brightness, color, and contrast. XR Backlight Master Drive provides precise local dimming control, while XR Motion Clarity ensures smooth motion even in fast-paced scenes.",
+    "specifications": {
+      "display": "65-inch 4K Mini LED",
+      "processor": "Cognitive Processor XR",
+      "HDR": "Dolby Vision, HDR10, HLG",
+      "gaming": "HDMI 2.1, 4K/120Hz, VRR, ALLM",
+      "audio": "Acoustic Multi-Audio, Dolby Atmos"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 876
+    },
+    "related_products": ["29", "30", "39"]
+  },
+  {
+    "id": "32",
+    "name": "Apple TV 4K (2023)",
+    "category_id": "8",
+    "price": 129.99,
+    "stock": 31,
+    "thumbnail": "https://picsum.photos/id/96/300/200",
+    "images": [
+      "https://picsum.photos/id/96/800/600",
+      "https://picsum.photos/id/97/800/600",
+      "https://picsum.photos/id/98/800/600"
+    ],
+    "description": "Powerful streaming device with A15 Bionic chip",
+    "full_description": "The Apple TV 4K (2023) delivers a cinematic experience with 4K Dolby Vision, HDR10+, and Dolby Atmos. Powered by the A15 Bionic chip, it offers next-level performance for gaming and apps. The redesigned Siri Remote makes navigation intuitive, while deep integration with Apple devices enhances the user experience.",
+    "specifications": {
+      "processor": "A15 Bionic chip",
+      "storage": "64GB/128GB",
+      "video": "4K HDR with Dolby Vision, HDR10+",
+      "audio": "Dolby Atmos, Dolby Digital 7.1",
+      "connectivity": "HDMI 2.1, Wi-Fi 6, Ethernet (128GB model)"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 932
+    },
+    "related_products": ["30", "31", "40"]
+  },
+  {
+    "id": "33",
+    "name": "PlayStation 5",
+    "category_id": "9",
+    "price": 499.99,
+    "stock": 7,
+    "thumbnail": "https://picsum.photos/id/99/300/200",
+    "images": [
+      "https://picsum.photos/id/99/800/600",
+      "https://picsum.photos/id/100/800/600",
+      "https://picsum.photos/id/101/800/600"
+    ],
+    "description": "Next-generation gaming console with ultra-high-speed SSD",
+    "full_description": "The PlayStation 5 redefines next-gen gaming with breathtaking 4K graphics, lightning-fast loading times thanks to the custom SSD, and the innovative DualSense controller with haptic feedback and adaptive triggers. Experience new worlds with 3D Tempest AudioTech and a growing library of exclusive games.",
+    "specifications": {
+      "processor": "Custom AMD Zen 2, 8 cores at 3.5GHz",
+      "GPU": "Custom RDNA 2, 10.28 TFLOPs",
+      "memory": "16GB GDDR6",
+      "storage": "825GB Custom SSD",
+      "video": "4K at up to 120Hz, 8K support"
+    },
+    "rating": {
+      "average": 4.9,
+      "count": 3254
+    },
+    "related_products": ["34", "37", "41"]
+  },
+  {
+    "id": "34",
+    "name": "Xbox Series X",
+    "category_id": "9",
+    "price": 499.99,
+    "stock": 9,
+    "thumbnail": "https://picsum.photos/id/102/300/200",
+    "images": [
+      "https://picsum.photos/id/102/800/600",
+      "https://picsum.photos/id/103/800/600",
+      "https://picsum.photos/id/104/800/600"
+    ],
+    "description": "Microsoft's most powerful gaming console ever",
+    "full_description": "The Xbox Series X is Microsoft's fastest, most powerful console ever. Experience next-gen gaming with 4K at up to 120 FPS, DirectX raytracing, variable refresh rate, and an ultra-high-speed SSD. Quick Resume lets you seamlessly switch between games, while thousands of games across four generations play better than ever.",
+    "specifications": {
+      "processor": "Custom AMD Zen 2, 8 cores at 3.8GHz",
+      "GPU": "Custom RDNA 2, 12 TFLOPs",
+      "memory": "16GB GDDR6",
+      "storage": "1TB Custom NVMe SSD",
+      "video": "4K at up to 120Hz, 8K support"
+    },
+    "rating": {
+      "average": 4.8,
+      "count": 2876
+    },
+    "related_products": ["33", "35", "42"]
+  },
+  {
+    "id": "35",
+    "name": "Nintendo Switch OLED Model",
+    "category_id": "9",
+    "price": 349.99,
+    "stock": 15,
+    "thumbnail": "https://picsum.photos/id/105/300/200",
+    "images": [
+      "https://picsum.photos/id/105/800/600",
+      "https://picsum.photos/id/106/800/600",
+      "https://picsum.photos/id/107/800/600"
+    ],
+    "description": "Versatile gaming console with vibrant OLED display",
+    "full_description": "The Nintendo Switch OLED Model features a vibrant 7-inch OLED screen, a wide adjustable stand, enhanced audio, and 64GB of internal storage. Play anywhere with three versatile play modes: TV mode, handheld mode, or tabletop mode, and enjoy a vast library of Nintendo games.",
+    "specifications": {
+      "display": "7-inch OLED touch screen",
+      "storage": "64GB internal (expandable via microSD)",
+      "battery": "4.5-9 hours of playtime",
+      "connectivity": "Wi-Fi, Bluetooth 4.1, wired LAN port in dock",
+      "modes": "TV, Handheld, Tabletop"
+    },
+    "rating": {
+      "average": 4.7,
+      "count": 1943
+    },
+    "related_products": ["33", "34", "36"]
+  },
+  {
+    "id": "36",
+    "name": "Steam Deck 512GB",
+    "category_id": "9",
+    "price": 649.99,
+    "sale_price": 599.99,
+    "stock": 6,
+    "thumbnail": "https://picsum.photos/id/108/300/200",
+    "images": [
+      "https://picsum.photos/id/108/800/600",
+      "https://picsum.photos/id/109/800/600",
+      "https://picsum.photos/id/110/800/600"
+    ],
+    "description": "Handheld gaming PC with access to Steam library",
+    "full_description": "The Steam Deck is a powerful, portable gaming PC that lets you take your Steam library on the go. With its custom AMD APU and 512GB of high-speed NVMe SSD storage, it delivers a console-like gaming experience with access to thousands of PC games. The premium anti-glare etched glass and exclusive carrying case make it the ultimate portable gaming solution.",
+    "specifications": {
+      "processor": "Custom AMD APU, Zen 2 4c/8t, RDNA 2 GPU",
+      "memory": "16GB LPDDR5 RAM",
+      "storage": "512GB NVMe SSD",
+      "display": "7-inch touchscreen, 1280x800 (16:10), 60Hz",
+      "battery": "40Whr, 2-8 hours of gameplay"
+    },
+    "rating": {
+      "average": 4.6,
+      "count": 1357
+    },
+    "related_products": ["34", "35", "43"]
+  }
+]
