@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 import { formatPrice, getStarRating } from '@/lib/utils/helpers';
+import { Button } from '@/components/ui/button';
+import { Heart } from 'lucide-react';
 
 export interface ProductCardProps {
   id: string;
@@ -10,12 +13,11 @@ export interface ProductCardProps {
   stock: number;
   thumbnail: string;
   description: string;
+  category?: string;
   rating?: {
     average: number;
     count: number;
   };
-  onAddToCart?: (id: string, quantity: number) => void;
-  onAddToWishlist?: (id: string) => void;
 }
 
 const ProductCard = ({
@@ -27,42 +29,25 @@ const ProductCard = ({
   thumbnail,
   description,
   rating,
-  onAddToCart,
-  onAddToWishlist,
 }: ProductCardProps) => {
   const [quantity, setQuantity] = useState(1);
   const [isInWishlist, setIsInWishlist] = useState(false);
-  
-  const handleQuantityChange = (newQuantity: number) => {
-    if (newQuantity >= 1 && newQuantity <= stock) {
-      setQuantity(newQuantity);
-    }
-  };
-  
-  const handleAddToCart = () => {
-    if (onAddToCart && stock > 0) {
-      onAddToCart(id, quantity);
-    }
-  };
-  
+
   const handleToggleWishlist = () => {
     setIsInWishlist((prev) => !prev);
-    if (onAddToWishlist) {
-      onAddToWishlist(id);
-    }
+    console.log(`${isInWishlist ? 'Removed from' : 'Added to'} wishlist: ${id}`);
   };
-  
-  // Generate star ratings display
-  const stars = rating?.average 
+
+  const stars = rating?.average
     ? getStarRating(rating.average).map((type, index) => (
-        <span 
-          key={`star-${index}`} 
+        <span
+          key={`star-${index}`}
           className={`text-lg ${
-            type === 'full' 
-              ? 'text-warning' 
-              : type === 'half' 
-                ? 'text-warning' 
-                : 'text-gray-300'
+            type === 'full'
+              ? 'text-yellow-400'
+              : type === 'half'
+              ? 'text-yellow-400'
+              : 'text-gray-300 dark:text-gray-600'
           }`}
           aria-hidden="true"
         >
@@ -71,117 +56,87 @@ const ProductCard = ({
       ))
     : null;
 
+  const canAddToCart = stock > 0;
+
   return (
-    <div 
-      className="card-hoverable w-full max-w-sm bg-white dark:bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-all" 
-      data-testid="product-card"
-    >
-      <div className="relative w-full h-48 overflow-hidden">
+    <div className="group relative flex flex-col overflow-hidden rounded-lg border border-border bg-card text-card-foreground shadow-sm transition-all duration-300 ease-in-out hover:shadow-lg dark:hover:shadow-primary/20">
+      <Link href={`/product/${id}`} className="block aspect-square overflow-hidden bg-muted">
         <Image
-          src={thumbnail || '/placeholder-product.jpg'}
+          src={thumbnail || '/images/placeholder-product.jpg'}
           alt={name}
           width={300}
-          height={200}
-          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-500"
-          data-testid="product-image"
+          height={300}
+          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
-        {salePrice && salePrice < price && (
-          <div className="absolute top-2 right-2 bg-error text-white text-xs font-bold px-2 py-1 rounded-full" data-testid="sale-badge">
-            Sale
+      </Link>
+
+      {salePrice && salePrice < price && (
+        <div className="absolute top-2 right-2 rounded-full bg-destructive px-2 py-1 text-xs font-semibold text-destructive-foreground">
+          SALE
+        </div>
+      )}
+
+      <button
+        onClick={handleToggleWishlist}
+        className="absolute top-2 left-2 z-10 rounded-full bg-background/70 p-1.5 text-muted-foreground backdrop-blur-sm transition-colors hover:bg-accent hover:text-accent-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2"
+        aria-label={isInWishlist ? 'Remove from wishlist' : 'Add to wishlist'}
+      >
+        <Heart className={`h-5 w-5 ${isInWishlist ? 'fill-red-500 text-red-500' : 'text-muted-foreground'}`} />
+      </button>
+
+      <div className="flex flex-1 flex-col p-4">
+        <h3 className="mb-1 truncate text-base font-semibold text-foreground group-hover:text-primary">
+          <Link href={`/product/${id}`}>{name}</Link>
+        </h3>
+
+        {rating && (
+          <div className="mb-2 flex items-center" aria-label={`Rated ${rating.average} out of 5 stars`}>
+            {stars}
+            <span className="ml-1.5 text-xs text-muted-foreground">({rating.count})</span>
           </div>
         )}
-        <button
-          className={`absolute top-2 left-2 text-xl ${
-            isInWishlist ? 'text-error' : 'text-gray-400 hover:text-error'
-          } transition-colors`}
-          onClick={handleToggleWishlist}
-          aria-label={isInWishlist ? "Remove from wishlist" : "Add to wishlist"}
-          data-testid="wishlist-button"
-        >
-          {isInWishlist ? '❤️' : '🤍'}
-        </button>
-      </div>
-      
-      <div className="p-4">
-        <h3 className="text-lg font-semibold mb-1 truncate text-gray-800 dark:text-white" data-testid="product-name">
-          {name}
-        </h3>
-        
-        <div className="flex items-center mb-2" aria-label={`Rated ${rating?.average || 0} out of 5 stars`}>
-          {stars}
-          {rating && (
-            <span className="ml-1 text-xs text-gray-500 dark:text-gray-400" data-testid="rating-count">
-              ({rating.count})
-            </span>
-          )}
-        </div>
-        
-        <p className="text-sm text-gray-600 dark:text-gray-300 mb-3 line-clamp-2" data-testid="product-description">
+
+        <p className="mb-3 line-clamp-2 text-sm text-muted-foreground">
           {description}
         </p>
-        
-        <div className="flex justify-between items-center mb-3">
-          <div>
-            {salePrice && salePrice < price ? (
-              <div className="flex flex-col">
-                <span className="text-lg font-bold text-error dark:text-error" data-testid="sale-price">
-                  {formatPrice(salePrice)}
-                </span>
-                <span className="text-sm line-through text-gray-500 dark:text-gray-400" data-testid="original-price">
+
+        <div className="mt-auto">
+          <div className="mb-3 flex items-baseline justify-between">
+            <div>
+              {salePrice && salePrice < price ? (
+                <div className="flex flex-col">
+                  <span className="text-xl font-bold text-destructive">
+                    {formatPrice(salePrice)}
+                  </span>
+                  <span className="text-sm line-through text-muted-foreground">
+                    {formatPrice(price)}
+                  </span>
+                </div>
+              ) : (
+                <span className="text-xl font-bold text-foreground">
                   {formatPrice(price)}
                 </span>
-              </div>
-            ) : (
-              <span className="text-lg font-bold text-gray-900 dark:text-white" data-testid="product-price">
-                {formatPrice(price)}
+              )}
+            </div>
+            {stock > 0 && stock < 10 && (
+              <span className="text-xs font-medium text-yellow-600 dark:text-yellow-500">
+                Only {stock} left!
               </span>
             )}
-          </div>
-          
-          <div className="text-sm text-gray-600 dark:text-gray-300" data-testid="stock-status">
-            {stock > 0 ? (
-              stock < 5 ? (
-                <span className="text-warning">Only {stock} left</span>
-              ) : (
-                <span className="text-success">In Stock</span>
-              )
-            ) : (
-              <span className="text-error">Out of Stock</span>
+            {stock === 0 && (
+                <span className="text-xs font-medium text-destructive">Out of stock</span>
             )}
           </div>
-        </div>
-        
-        <div className="flex items-center justify-between">
-          <div className="flex items-center border border-gray-300 rounded">
-            <button
-              onClick={() => handleQuantityChange(quantity - 1)}
-              className="px-2 py-1 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
-              disabled={quantity <= 1 || stock <= 0}
-              aria-label="Decrease quantity"
-              data-testid="decrease-button"
-            >
-              -
-            </button>
-            <span className="px-2 py-1" data-testid="quantity">{quantity}</span>
-            <button
-              onClick={() => handleQuantityChange(quantity + 1)}
-              className="px-2 py-1 text-gray-600 hover:bg-gray-100 disabled:opacity-50"
-              disabled={quantity >= stock || stock <= 0}
-              aria-label="Increase quantity"
-              data-testid="increase-button"
-            >
-              +
-            </button>
-          </div>
           
-          <button
-            onClick={handleAddToCart}
-            className="btn-primary px-4 py-2 ml-2 flex-grow disabled:opacity-50 disabled:cursor-not-allowed"
-            disabled={stock <= 0}
-            data-testid="add-to-cart-button"
+          <Button
+            variant="default"
+            size="sm"
+            className="w-full"
+            disabled={!canAddToCart}
+            onClick={() => console.log(`Add to cart: ${id}, quantity: ${quantity}`)}
           >
-            Add to Cart
-          </button>
+            {canAddToCart ? 'Add to Cart' : 'Out of Stock'}
+          </Button>
         </div>
       </div>
     </div>

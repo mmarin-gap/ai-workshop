@@ -1,103 +1,61 @@
-import Image from "next/image";
+import Link from "next/link";
+import { fetchProducts, fetchCategories } from "@/lib/data";
+import ProductGrid from "@/components/ui/ProductGrid";
+import { Button } from "@/components/ui/button";
+import { Product } from "@/lib/data"; // Import the Product type
 
-export default function Home() {
+export default async function HomePage() {
+  const allProducts = await fetchProducts();
+  const categories = await fetchCategories();
+
+  // Helper to get a few products for a category to feature
+  const getFeaturedProductsForCategory = (categoryId: string, count: number = 4) => {
+    return allProducts.filter((p) => p.category_id === categoryId).slice(0, count);
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
-
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    <div className="space-y-12">
+      {/* Hero Section - Optional: Add a hero banner if designed */}
+      {/* <section className="bg-neutral-100 dark:bg-neutral-800 py-12 md:py-20 rounded-lg">
+        <div className="container mx-auto text-center">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">Welcome to ElectronicsStore</h1>
+          <p className="text-lg md:text-xl text-neutral-700 dark:text-neutral-300 mb-8">
+            Your one-stop shop for the latest and greatest in tech.
+          </p>
+          <Link href="/products">
+            <Button size="lg" variant="default">Shop All Products</Button>
+          </Link>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </section> */}
+
+      {categories.map((category) => {
+        const featuredProducts = getFeaturedProductsForCategory(category.id, 4);
+        if (featuredProducts.length === 0) return null; // Don't render section if no products
+
+        return (
+          <section key={category.id} aria-labelledby={`category-${category.slug}-heading`}>
+            <div className="flex justify-between items-center mb-6">
+              <h2 id={`category-${category.slug}-heading`} className="text-2xl font-bold text-foreground">
+                {category.name}
+              </h2>
+              <Link href={`/category/${category.slug}`} passHref>
+                <Button variant="outline" size="sm">
+                  View more
+                </Button>
+              </Link>
+            </div>
+            <ProductGrid products={featuredProducts} />
+          </section>
+        );
+      })}
+
+      {/* Fallback if no categories or products */}
+      {categories.length === 0 && (
+        <div className="text-center py-12">
+          <h2 className="text-2xl font-semibold mb-4">No products available yet.</h2>
+          <p className="text-muted-foreground">Please check back later or contact support.</p>
+        </div>
+      )}
     </div>
   );
 }
